@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmind - Mitos e Verdades</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>PHARMIND</h1>
+
+        <p>Educação em Saúde • Uso Consciente de Medicamentos</p>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="mitos.html">Mitos e Verdades</a>
+            <a href="situacoes.html">Situações Cotidianas</a>
+            <a href="quiz.html">Quiz Educativo</a>
+            <a href="orientacoes.html">Orientações</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="mitos">
+
+            <h2>Mitos e Verdades</h2>
+
+            <p>
+                Leia cada afirmação e clique em <strong>Ver resposta</strong> para descobrir se ela é um mito ou uma verdade.
+            </p>
+
+            <!-- PERGUNTA 1 -->
+            <article class="card">
+
+                <h3>"Se um remédio funcionou uma vez, posso utilizá-lo novamente sem orientação."</h3>
+
+                <button onclick="mostrarResposta('r1')">Ver resposta</button>
+
+                <div id="r1" class="resposta">
+
+                    <h4 class="mito">❌ MITO</h4>
+
+                    <p>
+                        Um medicamento indicado anteriormente pode não ser adequado para uma nova situação.
+                        Os sintomas podem ser parecidos, mas a causa pode ser diferente.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- PERGUNTA 2 -->
+            <article class="card">
+
+                <h3>"Todo medicamento pode causar efeitos adversos."</h3>
+
+                <button onclick="mostrarResposta('r2')">Ver resposta</button>
+
+                <div id="r2" class="resposta">
+
+                    <h4 class="verdade">✅ VERDADE</h4>
+
+                    <p>
+                        Mesmo quando utilizados corretamente, medicamentos podem provocar efeitos adversos em algumas pessoas.
+                    </p>
+
+                </div>
+
+            </article>
+
+<!-- PERGUNTA 3 -->
+
+<article class="card">
+
+    <h3>"Toda informação encontrada na internet sobre medicamentos é confiável."</h3>
+
+    <button onclick="mostrarResposta('r3')">Ver resposta</button>
+
+    <div id="r3" class="resposta">
+
+        <h4 class="mito">❌ MITO</h4>
+
+        <p>
+            Nem toda informação disponível na internet é confiável. Procure sempre fontes oficiais e orientação de profissionais da saúde.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 4 -->
+
+<article class="card">
+
+    <h3>"Médicos e farmacêuticos podem orientar o uso correto dos medicamentos."</h3>
+
+    <button onclick="mostrarResposta('r4')">Ver resposta</button>
+
+    <div id="r4" class="resposta">
+
+        <h4 class="verdade">✅ VERDADE</h4>
+
+        <p>
+            Esses profissionais possuem conhecimento técnico para orientar sobre o uso seguro, a dose adequada e possíveis riscos dos medicamentos.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 5 -->
+
+<article class="card">
+
+    <h3>"Antibióticos podem ser usados para tratar gripe ou resfriado."</h3>
+
+    <button onclick="mostrarResposta('r5')">Ver resposta</button>
+
+    <div id="r5" class="resposta">
+
+        <h4 class="mito">❌ MITO</h4>
+
+        <p>
+            Gripe e resfriado são causados, na maioria dos casos, por vírus. Antibióticos combatem bactérias e seu uso inadequado favorece a resistência bacteriana.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 6 -->
+
+<article class="card">
+
+    <h3>"É importante respeitar a dose e o tempo de uso indicados para um medicamento."</h3>
+
+    <button onclick="mostrarResposta('r6')">Ver resposta</button>
+
+    <div id="r6" class="resposta">
+
+        <h4 class="verdade">✅ VERDADE</h4>
+
+        <p>
+            Alterar a dose ou interromper o tratamento por conta própria pode diminuir a eficácia do medicamento e aumentar os riscos à saúde.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 7 -->
+
+<article class="card">
+
+    <h3>"Compartilhar medicamentos com amigos ou familiares é seguro quando os sintomas são parecidos."</h3>
+
+    <button onclick="mostrarResposta('r7')">Ver resposta</button>
+
+    <div id="r7" class="resposta">
+
+        <h4 class="mito">❌ MITO</h4>
+
+        <p>
+            Pessoas diferentes podem apresentar doenças distintas, alergias ou contraindicações. Um medicamento seguro para uma pessoa pode representar riscos para outra.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 8 -->
+
+<article class="card">
+
+    <h3>"Ler a bula antes de utilizar um medicamento é uma atitude importante."</h3>
+
+    <button onclick="mostrarResposta('r8')">Ver resposta</button>
+
+    <div id="r8" class="resposta">
+
+        <h4 class="verdade">✅ VERDADE</h4>
+
+        <p>
+            A bula contém informações importantes sobre indicação, modo de uso, contraindicações, efeitos adversos e cuidados necessários durante o tratamento.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 9 -->
+
+<article class="card">
+
+    <h3>"Medicamentos naturais ou fitoterápicos não apresentam riscos à saúde."</h3>
+
+    <button onclick="mostrarResposta('r9')">Ver resposta</button>
+
+    <div id="r9" class="resposta">
+
+        <h4 class="mito">❌ MITO</h4>
+
+        <p>
+            Produtos naturais também podem causar efeitos adversos, alergias e interações com outros medicamentos. O uso deve ser orientado por um profissional.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- PERGUNTA 10 -->
+
+<article class="card">
+
+    <h3>"Em caso de dúvidas sobre um medicamento, procurar orientação profissional é a atitude mais segura."</h3>
+
+    <button onclick="mostrarResposta('r10')">Ver resposta</button>
+
+    <div id="r10" class="resposta">
+
+        <h4 class="verdade">✅ VERDADE</h4>
+
+        <p>
+            Médicos e farmacêuticos são os profissionais mais indicados para esclarecer dúvidas e orientar o uso correto dos medicamentos, reduzindo os riscos da automedicação.
+        </p>
+
+    </div>
+
+</article>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

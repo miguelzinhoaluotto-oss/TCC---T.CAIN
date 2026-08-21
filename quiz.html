@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pharmind - Quiz Educativo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>PHARMIND</h1>
+
+        <p>Educação em Saúde • Uso Consciente de Medicamentos</p>
+
+        <nav>
+
+            <a href="index.html">Início</a>
+            <a href="mitos.html">Mitos e Verdades</a>
+            <a href="situacoes.html">Situações Cotidianas</a>
+            <a href="quiz.html">Quiz Educativo</a>
+            <a href="orientacoes.html">Orientações</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- QUIZ -->
+
+    <main>
+
+        <section id="quiz">
+
+            <h2>🧠 Quiz Educativo</h2>
+
+            <p class="descricao">
+
+                Agora é hora de testar o que você aprendeu!
+
+                Responda às perguntas abaixo sobre automedicação e descubra
+
+                quanto você aprendeu durante sua visita ao Pharmind.
+
+            </p>
+
+
+            <!-- PROGRESSO -->
+
+            <div class="progresso">
+
+                <div id="barraProgresso"></div>
+
+            </div>
+
+            <p id="contador">Pergunta 1 de 10</p>
+
+
+            <!-- PERGUNTA -->
+
+            <div id="pergunta-container">
+
+                <h3 id="pergunta"></h3>
+
+                <div id="alternativas"></div>
+
+                <div id="feedback"></div>
+
+                <button id="proximo" onclick="proximaPergunta()">
+                    Próxima pergunta
+                </button>
+
+            </div>
+
+
+            <!-- RESULTADO -->
+
+            <div id="resultado">
+
+                <h2>🎉 Quiz concluído!</h2>
+
+                <p id="pontuacao"></p>
+
+                <div id="mensagemResultado"></div>
+
+                <button onclick="reiniciarQuiz()">
+                    Refazer quiz
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            PHARMIND — Educação para o uso consciente de medicamentos.
+        </p>
+
+        <p>
+            Projeto desenvolvido para fins educativos.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
