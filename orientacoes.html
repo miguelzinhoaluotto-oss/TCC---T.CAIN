@@ -4,24 +4,59 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Pharmind - Orientações</title>
-
     <link rel="stylesheet" href="style.css">
-
+    <link rel="shortcut icon" href="logopequena.ico"">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
+    <svg width="0" height="0" style="position:absolute">
+    <filter id="borda-branca" x="-10%" y="-10%" width="120%" height="120%">
+        <!-- Expande o contorno transparente da imagem -->
+        <feMorphology 
+            in="SourceAlpha" 
+            operator="dilate" 
+            radius="1.5" 
+            result="expandido"
+        />
+
+        <!-- Cria a cor branca -->
+        <feFlood 
+            flood-color="white" 
+            result="branco"
+        />
+
+        <!-- Coloca o branco somente na área expandida -->
+        <feComposite 
+            in="branco" 
+            in2="expandido" 
+            operator="in" 
+            result="borda"
+        />
+
+        <!-- Coloca a imagem original por cima da borda -->
+        <feComposite 
+            in="SourceGraphic" 
+            in2="borda" 
+            operator="over"
+        />
+    </filter>
+</svg>
 
     <header>
 
-        <h1>PHARMIND</h1>
+        <div class="cabecalho-titulo">
+            <img src="logogrande.png" class="logo">   
+            <h1>PHARMIND</h1> 
+        </div>
+
+        <br><br>
 
         <p>Educação em Saúde • Uso Consciente de Medicamentos</p>
+
+        <br>
 
         <nav>
 
@@ -33,7 +68,7 @@
 
             <a href="quiz.html">Quiz Educativo</a>
 
-            <a href="orientacoes.html">Orientações</a>
+            <a href="orientacoes.html" class="ativo">Orientações</a>
 
         </nav>
 
@@ -250,12 +285,14 @@
 
     <footer>
 
+        <hr>
+
         <p>
-            PHARMIND — Educação para o uso consciente de medicamentos.
+            Pharmind © 2026
         </p>
 
         <p>
-            Projeto desenvolvido para fins educativos.
+            Projeto desenvolvido para fins educacionais.
         </p>
 
     </footer>

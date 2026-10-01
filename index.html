@@ -3,29 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmind - Conscientização sobre Automedicação</title>
+    <title>Pharmind</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logopequena.ico">
 </head>
 
 <body>
+
+    <svg width="0" height="0" style="position:absolute">
+    <filter id="borda-branca" x="-10%" y="-10%" width="120%" height="120%">
+        <!-- Expande o contorno transparente da imagem -->
+        <feMorphology 
+            in="SourceAlpha" 
+            operator="dilate" 
+            radius="1.5" 
+            result="expandido"
+        />
+
+        <feFlood 
+            flood-color="white" 
+            result="branco"
+        />
+
+        <feComposite 
+            in="branco" 
+            in2="expandido" 
+            operator="in" 
+            result="borda"
+        />
+
+        <feComposite 
+            in="SourceGraphic" 
+            in2="borda" 
+            operator="over"
+        />
+    </filter>
+</svg>
+
+    </header>
+    
+
     <header>
 
-    
-    
-</header>
-    
+        <div class="cabecalho-titulo">
+            <img src="logogrande.png" class="logo">   
+            <h1>PHARMIND</h1> 
+        </div>
 
-    <header>
-
-        <h1>PHARMIND</h1>
+        <br><br>
 
         <p>
             Educação em Saúde • Uso Consciente de Medicamentos
         </p>
 
+        <br>
+
         <nav>
 
-    <a href="index.html">Início</a>
+    <a href="index.html" class="ativo">Início</a>
 
     <a href="mitos.html">Mitos e Verdades</a>
 
@@ -36,8 +71,6 @@
     <a href="orientacoes.html">Orientações</a>
 
 </nav>
-
-        <hr>
 
     </header>
 
@@ -94,10 +127,7 @@
             </p>
 
             <p>
-                Por isso, este projeto busca incentivar o uso consciente de medicamentos,
-                oferecendo informações acessíveis e atividades educativas que auxiliem na
-                compreensão dos riscos da automedicação e da importância da orientação
-                profissional.
+                Por isso, este projeto busca incentivar o uso consciente de medicamentos, oferecendo informações acessíveis e atividades educativas que auxiliem na compreensão dos riscos da automedicação e da importância da orientação profissional.
             </p>
 
         </section>
@@ -108,19 +138,33 @@
 
             <h2>O que você encontrará neste site?</h2>
 
+            <div class="conteudo">
+
             <ul>
 
-                <li>📖 Informações sobre automedicação.</li>
+                <li id="info">Informações sobre automedicação.</li>
 
-                <li>🧠 Mitos e verdades sobre medicamentos.</li>
+                <br>
 
-                <li>🏠 Situações comuns do dia a dia.</li>
+                <li id="mito">Mitos e verdades sobre medicamentos.</li>
 
-                <li>✅ Quiz educativo para reforçar o aprendizado.</li>
+                <br>
 
-                <li>💙 Orientações sobre quando procurar ajuda profissional.</li>
+                <li id="situ">Situações comuns do dia a dia.</li>
+
+                <br>
+
+                <li id="qiiz">Quiz educativo para reforçar o aprendizado.</li>
+
+                <br>
+
+                <li id="orie">Orientações sobre quando procurar ajuda profissional.</li>
 
             </ul>
+
+            <img src="ikoneee.png" class="imagi">
+
+            </div>
 
         </section>
 
